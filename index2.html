@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+</head>
+<body style="font-family: Arial; background-color: #f4f4f4; color: black;">
+
+
+    <h1>Exemplos de Formatação de Texto</h1>
+    
+
+    <p>
+        <b>Texto em negrito (b)</b>
+        <!-- Apenas deixa o texto visualmente em negrito -->
+        <!-- Boa prática: usar mais para estilo, não para importância -->
+    </p>
+
+    <p>
+        <strong>Texto importante (strong)</strong>
+        <!-- Indica importância semântica -->
+        <!-- Boa prática: preferir ao invés de <b> quando o conteúdo for relevante -->
+    </p>
+
+    <p>
+        <i>Texto em itálico (i)</i>
+        <!-- Apenas muda o estilo visual -->
+        <!-- Usado para palavras estrangeiras ou termos específicos -->
+    </p>
+
+    <p>
+        <em>Texto enfatizado (em)</em>
+        <!-- Dá ênfase semântica -->
+        <!-- Boa prática: melhor que <i> quando quiser destacar significado -->
+    </p>
+
+    <p>
+        <mark>Texto marcado (mark)</mark>
+        <!-- Destaca como se fosse marca-texto -->
+    </p>
+
+    <p>
+        <small>Texto menor (small)</small>
+        <!-- Usado para observações ou detalhes menos importantes -->
+    </p>
+
+    <p>
+        <del>Texto removido (del)</del>
+        <!-- Representa algo que foi apagado -->
+        <!-- Muito usado em preços antigos ou revisões -->
+    </p>
+
+    <p>
+        <ins>Texto inserido (ins)</ins>
+        <!-- Representa algo que foi adicionado -->
+        <!-- Geralmente aparece sublinhado -->
+    </p>
+
+    <p>
+        H<sub>2</sub>O
+        <!-- Subscript (sub) -->
+        <!-- Texto abaixo da linha (ex: fórmulas químicas) -->
+    </p>
+
+    <p>
+        x<sup>2</sup>
+        <!-- Superscript (sup) -->
+        <!-- Texto acima da linha (ex: potências matemáticas) -->
+    </p>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citações e Abreviações</title>
+</head>
+
+<body>
+
+    <h1>Elementos de Citação e Abreviação</h1>
+
+    <p>
+        <abbr title="HyperText Markup Language">HTML</abbr>
+        <!-- <abbr> define uma abreviação -->
+        <!-- O atributo title mostra o significado ao passar o mouse -->
+        <!-- Boa prática: sempre usar title para explicar a sigla -->
+    </p>
+
+    <address>
+        Rua Exemplo, 123<br>
+        Cidade - País<br>
+        Email: exemplo@email.com
+    </address>
+    <!-- <address> define informações de contato -->
+    <!-- Normalmente usado para autor ou dono do site -->
+    <!-- Boa prática: usar apenas para informações reais de contato -->
+
+    <p>
+        Texto normal
+        <bdo dir="rtl">Texto invertido</bdo>
+    </p>
+    <!-- <bdo> controla a direção do texto -->
+    <!-- dir="rtl" significa "right to left" (direita para esquerda) -->
+    <!-- Boa prática: útil para idiomas como árabe ou hebraico -->
+
+    <blockquote>
+        Este é um exemplo de citação longa retirada de outra fonte.
+    </blockquote>
+    <!-- <blockquote> representa uma citação em bloco -->
+    <!-- Geralmente vem com recuo automático -->
+    <!-- Boa prática: usar quando o texto é longo e vem de outra fonte -->
+
+    <p>
+        Como dizia:
+        <q>A simplicidade é o último grau de sofisticação.</q>
+    </p>
+    <!-- <q> define uma citação curta -->
+    <!-- O navegador geralmente adiciona aspas automaticamente -->
+
+    <p>
+        <cite>Dom Casmurro</cite> é uma obra famosa.
+    </p>
+    <!-- <cite> define o título de uma obra -->
+    <!-- Pode ser livro, filme, música, etc -->
+    <!-- Boa prática: não usar para nomes de pessoas -->
+
+</body>
+
+</html>
+
+Como criar uma pasta e um arquivo HTML no VS Code
+1. Criar uma pasta
+
+Abra o Visual Studio Code
+
+No menu superior, clique em File (Arquivo) → Open Folder (Abrir Pasta)
+
+Escolha ou crie uma nova pasta (ex: meu-site)
+
+Clique em Selecionar pasta
+
+Por que isso é importante?
+A pasta funciona como uma “caixa” onde você organiza todos os arquivos do seu projeto (HTML, CSS, imagens, etc).
+
+2. Criar um arquivo HTML
+
+No lado esquerdo (Explorer), clique com o botão direito dentro da pasta
+
+Clique em New File (Novo Arquivo)
+
+Nomeie como: index.html
+
+Boa prática:
+
+Sempre usar .html no final
+
+index.html é o nome padrão que navegadores procuram primeiro
+
+3. Escrever a estrutura básica
+
+Digite ! e pressione Enter (se tiver o Emmet ativado)
+
+Isso gera automaticamente a base do HTML.
+
+4. Abrir no navegador
+
+Clique com o botão direito no arquivo
+
+Ou abra manualmente no navegador (duplo clique)
+
+Diferença entre HTML tradicional e HTML semântico
+HTML tradicional (não semântico)
+
+Exemplo:
+
+<div id="header"></div>
+<div id="menu"></div>
+<div id="content"></div>
+<div id="footer"></div>
+What is this?
+
+Problema:
+
+Tudo é <div>
+
+Não diz o que cada parte realmente é
+
+Difícil para:
+
+Google (SEO)
+
+leitores de tela
+
+outros desenvolvedores
+
+Analogia:
+É como ter várias caixas sem etiqueta — você não sabe o que tem dentro.
+
+HTML semântico
+
+Exemplo:
+
+<header></header>
+<nav></nav>
+<main></main>
+<footer></footer>
+What is this?
+
+Vantagens:
+
+O código “se explica sozinho”
+
+Melhor para SEO (Google entende melhor)
+
+Melhor acessibilidade
+
+Mais organizado
+
+Analogia:
+Agora cada caixa tem um nome:
+
+“Cabeçalho”
+
+“Menu”
+
+“Conteúdo”
+
+“Rodapé”
+
+Fica muito mais fácil de entender.
+
+Comparação simples
+Tipo	Clareza	Organização	SEO
+Tradicional	Baixa	Média	Ruim
+Semântico	Alta	Alta	Melhor
+Boa prática importante
+
+Use HTML semântico sempre que possível
+
+Use <div> apenas quando não houver uma tag mais adequada
+
+Pense no significado, não só na aparência
+
+<!DOCTYPE html>
+<!-- Define que o documento usa HTML5 -->
+<!-- Boa prática: sempre declarar o DOCTYPE para evitar comportamentos inconsistentes no navegador -->
+
+<html lang="en">
+<!-- Início do HTML -->
+<!-- Boa prática: definir o idioma ajuda acessibilidade, SEO e leitores de tela -->
+
+<head>
+    <!-- Área de configurações (não aparece na tela) -->
+    <!-- Boa prática: tudo que configura o comportamento da página fica aqui -->
+
+    <meta charset="UTF-8">
+    <!-- Define o padrão de caracteres -->
+    <!-- Por que usar: evita erros com acentos (ex: "ç", "ã") -->
+    <!-- Boa prática: sempre incluir para garantir compatibilidade -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Controla como a página se adapta a telas diferentes -->
+    <!-- Por que usar: sem isso, o site fica "quebrado" em celulares -->
+    <!-- Boa prática: essencial para responsividade -->
+
+    <title>Document</title>
+    <!-- Nome da aba do navegador -->
+    <!-- Boa prática: usar títulos descritivos (melhora SEO e organização) -->
+
+</head>
+
+<body>
+    <!-- Corpo da página (conteúdo visível) -->
+    <!-- Boa prática: tudo que aparece deve estar dentro de um único <body> -->
+    <!-- Por que: o navegador espera um único corpo; múltiplos podem causar erros -->
+
+    <h1 style="color: aqua;font-family:'Franklin Gothic Medium';font-size: 30px">olá</h1>
+    <!-- Título principal (mais importante da página) -->
+    <!-- Boa prática: usar apenas um <h1> por página para organização semântica -->
+    <!-- Observação: está vazio, então não aparece nada -->
+
+    <h2>olá</h2>
+    <!-- Subtítulo -->
+    <!-- Boa prática: usar em ordem (h1 -> h2 -> h3...) sem pular níveis -->
+
+    <h3>olá</h3>
+    <!-- Título de nível 3 -->
+
+    <h4>olá</h4>
+    <!-- Título de nível 4 -->
+
+    <h5>olá</h5>
+    <!-- Título de nível 5 -->
+
+    <h6>olá</h6>
+    <!-- Título de nível 6 (menos importante) -->
+
+    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quisquam cupiditate esse eveniet hic inventore ut dolorem. Recusandae atque cupiditate enim, id culpa eligendi rerum amet, odit ex maiores deserunt?</P>
+    <!-- Parágrafo de texto -->
+    <!-- Boa prática: usar para blocos de texto -->
+    <!-- Observação: tag normalmente escrita em minúsculo (<p>) por padrão -->
+    <!-- Está vazio, então não exibe conteúdo -->
+
+</body>
+<!-- Boa prática: sempre fechar corretamente as tags -->
+
+</html>
+<!-- Final do documento HTML -->
+
+<!DOCTYPE html>
+<!-- Define HTML5 -->
+
+<html lang="en">
+<!-- Início do documento -->
+
+<head>
+    <!-- Configurações -->
+
+    <meta charset="UTF-8">
+    <!-- Permite acentos -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsividade -->
+
+    <title>Document</title>
+    <!-- Título da aba -->
+
+</head>
+
+<body style="background-color: #1e1e1e;">
+<!-- Cor de fundo da página inteira -->
+
+    <h1 style="background-color: black; color: aqua; font-family: 'Franklin Gothic Medium'; font-size: 30px; text-align: center;">
+        Título Principal
+    </h1>
+    <!-- Usa todas as propriedades:
+         background-color → fundo preto
+         color → cor do texto
+         font-family → fonte
+         font-size → tamanho
+         text-align → centralizado -->
+
+    <h2 style="background-color: #333; color: lightgreen; font-family: Arial; font-size: 26px; text-align: left;">
+        Subtítulo
+    </h2>
+    <!-- Alinhado à esquerda -->
+
+    <h3 style="background-color: #444; color: white; font-family: Verdana; font-size: 22px; text-align: right;">
+        Seção
+    </h3>
+    <!-- Alinhado à direita -->
+
+    <h4 style="background-color: #555; color: yellow; font-family: Tahoma; font-size: 20px; text-align: center;">
+        Sub-seção
+    </h4>
+    <!-- Centralizado novamente -->
+
+    <h5 style="background-color: #666; color: pink; font-family: Courier New; font-size: 18px; text-align: left;">
+        Detalhe
+    </h5>
+
+    <h6 style="background-color: #777; color: orange; font-family: Georgia; font-size: 16px; text-align: right;">
+        Observação
+    </h6>
+
+    <P style="background-color: #222; color: white; font-family: Arial; font-size: 14px; text-align: justify;">
+        Este é um parágrafo de exemplo usando todas as propriedades de estilo básico diretamente na tag.
+        Aqui você consegue ver cores, fonte, tamanho e alinhamento funcionando juntos.
+    </P>
+    <!-- Parágrafo com texto justificado -->
+
+</body>
+
+</html>
